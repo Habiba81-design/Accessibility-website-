@@ -1,0 +1,146 @@
+body {
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.div {
+    background-color: rgba(240, 60, 120, 0.7);
+    margin: 2em auto;
+    width: 90vw;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    margin: 1em auto;
+    height: 80px;
+    width: 80px;
+}
+
+#sl {
+    color: white;
+    padding-top: 1em;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#hr {
+    width: 100%;
+    border: 0.9px solid white;
+    margin-top: 1em;
+}
+
+#la, #lb {
+    padding-left: 0;
+    color: white;
+    padding-bottom: 0.5em;
+    display: block;
+    font-size: 1.2rem;
+}
+
+::placeholder {
+    color: black;
+    border-color: white;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+.right-align {
+    text-align: right;
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-right: 20px;
+    font-size: 1.2rem;
+}
+
+.btn {
+    width: 100%;
+    height: 40px;
+    margin-left: 0;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+input::placeholder {
+    background-color: #ffffff;
+    opacity: 1;
+}
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .div {
+        width: 95vw;
+        padding: 1.5em;
+    }
+    .logo {
+        height: 60px;
+        width: 60px;
+    }
+    #sl {
+        font-size: 1.2rem;
+    }
+    #hr {
+        margin-top: 0.5em;
+    }
+    .btn {
+        height: 35px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .div {
+        width: 98vw;
+        padding: 1em;
+    }
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+    #sl {
+        font-size: 1rem;
+    }
+    #hr {
+        margin-top: 0.2em;
+    }
+    .btn {
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .div {
+        width: 100vw;
+        padding: 0.5em;
+    }
+    .logo {
+        height: 40px;
+        width: 40px;
+    }
+    #sl {
+        font-size: 0.8rem;
+    }
+    #hr {
+        margin-top: 0.1em;
+    }
+    .btn {
+        height: 25px;
+    }
+}

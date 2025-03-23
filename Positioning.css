@@ -1,0 +1,64 @@
+#coral{
+    position:absolute;
+    left:400px;
+    top:200px
+}
+
+#teal{ 
+    position:;
+    
+    
+}
+
+#tan{
+    position:sticky;
+}
+#red{
+    position:fixed;
+    left:400px;
+    top:200px;
+    z-index:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Five different position values*/
+/* Static*/
+/* Relative*/
+/* Absolute*/
+/* Fixed*/
+/* Sticky*/
+
+/* Five different position helper properties*/
+/* Top*/
+/* Bottom*/
+/* Left*/
+/* Right*/
+/* z-index*/
+
+

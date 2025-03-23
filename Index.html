@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0"/>
+     <meta name="description" content=" codeBloom Accessibility Exercise"/>
+    <title> Accessibility Exercise</title>
+    <link rel="Stylesheet" href="Style.css"
+</head>
+<body>
+<header>
+<img src="logo.png" alt="business logo" id="logo">
+<h1 style="margin-left:30px;">HTML/CSS Exercise</h1>
+<nav>
+<ul>
+<li>
+<a href="#student-profile" accesskey="s"> PROFILE</a>
+</li>
+<li>
+<a href="#html-queries" accesskey="q">HTML</a>
+</li>
+<li>
+<a href="#css-queries" accesskey="q">CSS</a>
+</li>
+</ul>
+</nav>
+</header>
+    
+<main>
+<form>
+<section role="region" aria-labelledby="student-profile" id="student-profile"> 
+<h2 class="sp">Student Profile</h2> 
+
+<div class="profile">
+<label for="sp">Name:</label>    
+<input type="text" id="sp" name="student-name">
+</div>
+<div class="profile">
+<label for="email"> Email:</label>    
+<input type="email" id="email" name="email-address">
+</div>  
+
+<div class="profile">
+<label for="dob"> D.O.B<span class="sr-only">(Date of Birth)</span>:</label>    
+<input type="date" id="dob" name="date-of-birth">
+</div>  
+</section>
+
+<section role="region" aria-labelledby="html-queries" id="html-queries">  
+<h2 class="html-query">HTML</h2>  
+  
+<div class="query-block">
+<p>1</p>
+<fieldset class="query" name="html-query-one">
+<legend> HTML is a programming language</legend>   
+
+<ul class="answers-list">
+<li>
+<label for="q1-a1"><input type="radio" id="q1-a1" name="q1" value="false">True</label>
+</li>
+
+<li>
+<label for="q1-a2"><input type="radio" id="q1-a2" name="q1" value="false">False</label>
+</li>
+</ul>
+</fieldset>   
+</div>
+    
+<div class="query-block">
+<p>2</p>
+<fieldset class="query" name="html-query-two">
+<legend> Legend can be placed anywhere within a fieldset tag</legend>   
+
+<ul class="answers-list">
+<li>
+<label for="q2-a1"><input type="radio" id="q2-a1" name="q2" value="true">True</label>
+</li>
+
+<li>
+<label for="q2-a2"><input type="radio" id="q2-a2" name="q2" value="true">False</label>
+</li>
+</ul>
+</fieldset>   
+</div>
+    
+<div class="query-block">
+<p>3</p>
+<fieldset class="query" name="html-query-three">
+<legend> What is the purpose of the head tag in html?</legend>   
+
+<ul class="answers-list">
+<li>
+<label for="q3-a1"><input type="checkbox" id="q3-a1" name="q3" value="correct">To define the title of a document</label>
+</li>
+
+<li>
+<label for="q3-a2"><input type="checkbox" id="q3-a2" name="q3" value="incorrect">To define the style of a document</label>
+</li>
+
+<li>
+<label for="q3-a3"><input type="checkbox" id="q3-a3" name="q3" value="correct">To contain metadata about the html document</label>
+</li>
+
+</ul>
+</fieldset>   
+</div>
+
+</section>
+
+<section role="region" aria-labelledby="css-queries" id="css-queries">  
+<h2 class="css-queries">CSS</h2>  
+<div class="css-row">
+<div class="query-block">
+<label for="css-query">CSS is used to control the layout of a webpage?
+</label>
+</div>
+<div class="answer">
+<select id="css-query" name="css-query" required>
+<option value="">Select an option</option> 
+<option value="yes">Yes</option>
+<option value="no">No</option> 
+</select>
+</div>
+
+
+<div class="query-block">
+<label for="css-query">Would having two or more ID selectors with the same name cause a smooth running, and also help the browser to be able to target the correct HTML elements?
+</label>
+</div>
+
+<div class="answer">
+<select id="css-query" name="css-query" required>
+<option value="">Select an option</option> 
+<option value="yes">Yes</option>
+<option value="no">No</option> 
+</select>  
+</div>
+
+
+<div class="query-block">
+<label for="css-query">Do you have any questions?
+</label>
+</div>
+<div class="answer">
+<textarea rows="5px" cols="32px" id="css-query" name="css-query" placeholder="A CSS box model is......."></textarea>
+</div>
+
+</div>
+</section>
+<button type="submit" class="btn"> Submit</button>   
+</form>
+</main>
+
+
+<footer>
+<address>
+<a href="#">DesignsHive</a><br>Manhyia<br>Kumasi<br>Ghana
+</address>    
+
+</footer>
+</body>
+</html>
